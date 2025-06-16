@@ -1,9 +1,17 @@
 package in.sp.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student {
+    @Value("3")
     private int id;
+    @Value("Somesh")
     private String name;
+    @Value("somesh@gmail.com")
     private String email;
+    @Value("indore")
     private String Address;
 
     public String getAddress() {
